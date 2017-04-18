@@ -1,0 +1,15 @@
+{
+  "name": "tinybits",
+  "version": "0.0.0",
+  "description": "Framework to create pixel art with HTML/CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ItsJonQ/tinybits.git"
+  },
+  "author": "ItsJonQ <itsjonq@gmail.com> (http://jonquach.com)",
+  "license": "MIT",
+}
