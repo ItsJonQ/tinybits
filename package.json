@@ -11,5 +11,8 @@
     "url": "git@github.com:ItsJonQ/tinybits.git"
   },
   "author": "ItsJonQ <itsjonq@gmail.com> (http://jonquach.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "4.5.2"
+  }
 }
