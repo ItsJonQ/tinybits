@@ -9,6 +9,7 @@ var sass = require('node-sass');
 var file = pkg.name;
 var includePaths = pathfinder([
   require('seed-dash'),
+  require('seed-props'),
   require('seed-publish'),
   require('seed-this'),
 ]);

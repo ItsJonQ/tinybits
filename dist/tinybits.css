@@ -12,9 +12,24 @@
   box-shadow: 0 2px 0 rgba(255, 255, 255, 0.2) inset, 2px 2px 0 rgba(255, 255, 255, 0.1) inset, 0 -2px 0 rgba(0, 0, 0, 0.2) inset, -2px 2px 0 rgba(0, 0, 0, 0.1) inset;
   display: inline-block;
   font-size: 0;
-  height: 52px;
-  width: 52px; }
+  height: 48px;
+  width: 48px;
+  vertical-align: top; }
   .tbs-c-stone-tile + .tbs-c-stone-tile {
     margin-left: -2px; }
+  .tbs-c-stone-tile .tbs-c-stone-tile {
+    margin-left: -2px;
+    margin-right: -2px;
+    margin-top: -2px; }
+    .tbs-c-stone-tile .tbs-c-stone-tile:first-child {
+      margin-right: 0; }
+    .tbs-c-stone-tile .tbs-c-stone-tile:nth-child(4) {
+      margin-left: 0; }
   .tbs-c-stone-tile.m-alt {
     background-color: #444644; }
+  .tbs-c-stone-tile.x-sm {
+    height: 25px;
+    width: 25px; }
+  .tbs-c-stone-tile.x-sm-wide {
+    height: 25px;
+    width: 48px; }

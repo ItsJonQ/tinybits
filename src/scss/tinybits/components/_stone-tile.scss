@@ -2,6 +2,7 @@
 
 // Dependencies
 @import "pack/seed-dash/_index";
+@import "pack/seed-props/_index";
 @import "pack/seed-publish/_index";
 @import "pack/seed-this/_index";
 @import "../configs/namespace";
@@ -11,6 +12,7 @@
 @include export(tinybits-stone-tile) {
   .#{$tbs-ns}-c-stone-tile {
     $this: this();
+    $mod: "-";
 
     // background-color: currentColor;
     background-color: _get($tbs-tile, background-color);
@@ -23,14 +25,38 @@
     font-size: 0;
     height: _get($tbs-tile, size);
     width: _get($tbs-tile, size);
+    vertical-align: top;
 
     + #{$this} {
       margin-left: -(_get($tbs-stroke, width));
     }
 
+    #{$this} {
+      margin-left: -(_get($tbs-stroke, width));
+      margin-right: -(_get($tbs-stroke, width));
+      margin-top: -(_get($tbs-stroke, width));
+
+      &:first-child {
+        margin-right: 0;
+      }
+
+      &:nth-child(4) {
+        margin-left: 0;
+      }
+    }
+
     // Modifiers
+    // Material
     &.m-alt {
       background-color: _get($tbs-tile, alt, background-color);
+    }
+
+    // Sizes
+    &.x {
+      @include prop-map(_get($tbs-tile, sizes), (size)) {
+        height: _get(prop(size), height);
+        width: _get(prop(size), width);
+      }
     }
   }
 }

@@ -8,9 +8,20 @@ $tbs-tile: (
   background-color: #3c4647,
   border-color: #1e2229,
   box-shadow: #{_get($tbs-stroke, bxsdw, hl), _get($tbs-stroke, bxsdw, sdw)},
-  size: 52px,
+  size: 48px,
 
   alt: (
     background-color: #444644,
+  ),
+
+  sizes: (
+    sm: (
+      height: 25px,
+      width: 25px,
+    ),
+    sm-wide: (
+      height: 25px,
+      width: 48px,
+    ),
   ),
 ) !default;
