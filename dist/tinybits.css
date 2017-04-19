@@ -1,0 +1,20 @@
+.tbs-comp {
+  box-sizing: border-box;
+  display: block;
+  font-size: 0; }
+
+.tbs-c-stone-tile {
+  background-color: #3c4647;
+  border-color: #1e2229;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 0 rgba(255, 255, 255, 0.2) inset, 2px 2px 0 rgba(255, 255, 255, 0.1) inset, 0 -2px 0 rgba(0, 0, 0, 0.2) inset, -2px 2px 0 rgba(0, 0, 0, 0.1) inset;
+  display: inline-block;
+  font-size: 0;
+  height: 52px;
+  width: 52px; }
+  .tbs-c-stone-tile + .tbs-c-stone-tile {
+    margin-left: -2px; }
+  .tbs-c-stone-tile.m-alt {
+    background-color: #444644; }

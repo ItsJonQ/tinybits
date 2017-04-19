@@ -1,0 +1,17 @@
+// Configs :: Stroke
+
+$__tbs-stroke-width: 2px !default;
+
+$tbs-stroke: (
+  width: $__tbs-stroke-width,
+  bxsdw: (
+    hl: #{
+      0 #{$__tbs-stroke-width} 0 rgba(white, 0.2) inset,
+      #{$__tbs-stroke-width} #{$__tbs-stroke-width} 0 rgba(white, 0.1) inset
+    },
+    sdw: #{
+      0 -#{$__tbs-stroke-width} 0 rgba(black, 0.2) inset,
+      -#{$__tbs-stroke-width} #{$__tbs-stroke-width} 0 rgba(black, 0.1) inset
+    },
+  ),
+) !default;

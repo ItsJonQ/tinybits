@@ -1,0 +1,6 @@
+/**
+ * tinybits v0.0.0
+ * Framework to create pixel art with HTML/CSS
+ * Licensed under MIT
+ */
+.tbs-c-tile{background-color:currentColor;border-size:2px;box-sizing:border-box;height:32px;width:32px}

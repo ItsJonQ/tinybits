@@ -1,0 +1,15 @@
+// Component :: Comp
+
+// Dependencies
+@import "pack/seed-publish/_index";
+@import "../configs/namespace";
+
+@include export(tinybits-comp) {
+  .#{$tbs-ns}-comp {
+    box-sizing: border-box;
+    display: block;
+    font-size: 0;
+  }
+}
+
+@include publish(tinybits-comp);

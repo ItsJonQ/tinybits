@@ -1,0 +1,16 @@
+// Configs :: Tile
+
+// Dependencies
+@import "pack/seed-dash/_index";
+@import "../configs/stroke";
+
+$tbs-tile: (
+  background-color: #3c4647,
+  border-color: #1e2229,
+  box-shadow: #{_get($tbs-stroke, bxsdw, hl), _get($tbs-stroke, bxsdw, sdw)},
+  size: 52px,
+
+  alt: (
+    background-color: #444644,
+  ),
+) !default;

@@ -4,7 +4,16 @@
   "description": "Framework to create pixel art with HTML/CSS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "banner": "node ./scripts/banner.js",
+    "build:dev": "node ./scripts/build-dev.js",
+    "build:main": "node ./scripts/build.js",
+    "build": "npm run build:main && npm run banner",
+    "start": "npm run build:dev && npm run watch:css",
+    "test:mocha": "mocha",
+    "test": "true",
+    "prepublish": "npm run test",
+    "version": "npm run build && git add dist && git add example",
+    "watch:css": "nodemon -e scss -x \"npm run build:dev\""
   },
   "repository": {
     "type": "git",
@@ -12,7 +21,15 @@
   },
   "author": "ItsJonQ <itsjonq@gmail.com> (http://jonquach.com)",
   "license": "MIT",
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "node-sass": "4.5.2",
+    "nodemon": "1.11.0"
+  },
   "dependencies": {
-    "node-sass": "4.5.2"
+    "sass-pathfinder": "0.0.5",
+    "seed-dash": "0.0.1",
+    "seed-publish": "0.1.1",
+    "seed-this": "0.0.5"
   }
 }
